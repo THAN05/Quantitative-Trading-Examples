@@ -75,6 +75,7 @@ print(sharpeTrainset)
 sharpeTestset = np.sqrt(252) * np.mean(pnl[testset]) / np.std(pnl[testset])
 print(sharpeTestset)
 plt.plot(np.cumsum(pnl[testset]))
+plt.show()
 
 
 positions.to_pickle("example3_6_positions")
